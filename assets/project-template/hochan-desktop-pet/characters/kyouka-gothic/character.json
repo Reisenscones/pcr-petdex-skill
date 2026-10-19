@@ -1,0 +1,10 @@
+{
+  "id": "kyouka-gothic",
+  "name": "キョウカ（ゴシック）",
+  "model": "139031",
+  "skin": "skin.json",
+  "asset_dir": "assets/characters/kyouka-gothic/animation-resources",
+  "order": 1,
+  "source_url": "https://redive.estertion.win/",
+  "copyright": "© Cygames"
+}

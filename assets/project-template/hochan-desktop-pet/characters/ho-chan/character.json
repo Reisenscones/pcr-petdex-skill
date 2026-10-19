@@ -1,0 +1,10 @@
+{
+  "id": "ho-chan",
+  "name": "ホウオウ",
+  "model": "134731",
+  "skin": "../../skin.json",
+  "asset_dir": "assets/characters/ho-chan/animation-resources",
+  "order": 0,
+  "source_url": "https://redive.estertion.win/",
+  "copyright": "© Cygames"
+}

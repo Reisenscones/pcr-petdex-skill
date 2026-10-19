@@ -1,0 +1,315 @@
+{
+  "format_version": 1,
+  "created_date": "2026-10-19",
+  "source": "Ho-chan Petdex working-tree source snapshot",
+  "upstream": {
+    "repository": "https://github.com/Myf-ricey/GooglePiggy_DesktopPet",
+    "revision": "938c40e1253511baeb8b3318ab6d3a75cbff876a",
+    "license_file": "project-template/hochan-desktop-pet/LICENSE"
+  },
+  "excluded": [
+    "character skeletons and atlases",
+    "character textures, frames and portraits",
+    "native export tools",
+    "virtual environments",
+    "Codex data and runtime state",
+    "build output and historical reports"
+  ],
+  "portability_changes": [
+    "Resolve either one .skel or one .json skeleton with a matching atlas.",
+    "New-character registration no longer assumes a same-basename PNG; atlas may reference other texture pages.",
+    "New-character registration requires explicit source URL and copyright.",
+    "Startup falls back to an available built character when the original main pack is absent.",
+    "Preview launcher explicitly disables the real Codex observer.",
+    "Replace machine-specific and historical application documentation with portable instructions.",
+    "Preserve original MIT software and separate artwork notices; include only two neutral effect PNGs.",
+    "Normalize the main reference character directory, internal id, runtime defaults, build/profile/verification commands and documentation to ho-chan."
+  ],
+  "validation_scope": "Static structure, source syntax, encoding, links and file checksums only. No clean-system, VM, simulated-environment, asset-build or GUI runtime validation.",
+  "files": {
+    ".gitignore": {
+      "bytes": 119,
+      "sha256": "da0e60d20f5881c116e60f9f9f9234bce3b6cfe677b91f46ecc9d456efd1fa13"
+    },
+    "docs/architecture.md": {
+      "bytes": 3354,
+      "sha256": "d2a184a8abe270d12a678a652b520613038fdf7edffe45ccab018dbaa863ead5"
+    },
+    "docs/project-layout.md": {
+      "bytes": 962,
+      "sha256": "0d9609ae5eab91806382acbccf6c8b14772ba7ffb187cb894259e67f0de5efe2"
+    },
+    "hochan-desktop-pet/.gitignore": {
+      "bytes": 64,
+      "sha256": "d882ae0e7134b931e70e69769d9a431b3dd6bced790d65a6771dc2e45093c620"
+    },
+    "hochan-desktop-pet/animation_clock.py": {
+      "bytes": 9607,
+      "sha256": "df49aea7c0e5817a1dd10bb3462b3aaecc38b65b822a1a5b9d5bab7e3e9e952f"
+    },
+    "hochan-desktop-pet/ASSET-NOTICE.md": {
+      "bytes": 2705,
+      "sha256": "08b29223218f3c2f313b8beaf2848d6a681cd067d332621950918d47b7e3b7cc"
+    },
+    "hochan-desktop-pet/asset_storage.py": {
+      "bytes": 4403,
+      "sha256": "34b535462b7d96b95424abc7c3c2c4d3009a1176b0fc7b88484e095014522c9b"
+    },
+    "hochan-desktop-pet/assets/effects/firework.png": {
+      "bytes": 72025,
+      "sha256": "dc4c0e4fc02e44ff7c2f3052e701f877406ad5e93bf45549b797e2f0d25929bc"
+    },
+    "hochan-desktop-pet/assets/effects/sparkle.png": {
+      "bytes": 16003,
+      "sha256": "a69cb6f84410f8b94f07957fe0d44c92a2209cf22f89f28499fc355f3713b3be"
+    },
+    "hochan-desktop-pet/character_catalog.py": {
+      "bytes": 5072,
+      "sha256": "cd54eda9378f8c2ff9e68b1d9423c1622c8604c19dce75af5369bed46bafafc9"
+    },
+    "hochan-desktop-pet/characters/ho-chan/character.json": {
+      "bytes": 254,
+      "sha256": "4d0ec664336fffebd127ba72f3ac3da9682079881bc47aee98837d59f682fbf4"
+    },
+    "hochan-desktop-pet/characters/kyouka-gothic/character.json": {
+      "bytes": 278,
+      "sha256": "43aa7ba88272329c000df2fb565c612b025841c069bf0ebfb00c6345cc954a5f"
+    },
+    "hochan-desktop-pet/characters/kyouka-gothic/skin.json": {
+      "bytes": 2536,
+      "sha256": "453b9c2ef7eac640820a85794ad5bfa58994a2c41c6719144c906e829ba5ca31"
+    },
+    "hochan-desktop-pet/characters/README.md": {
+      "bytes": 7125,
+      "sha256": "af10467cd45bf825fb4b901dd2ed3f412fe9d9efde9f1b8d5f5b90648cbce826"
+    },
+    "hochan-desktop-pet/codex_autostart.py": {
+      "bytes": 8363,
+      "sha256": "1126a79bcff9e5dce477915a3cfdf09fbfebb53a8048d833e890e48a5bec1e74"
+    },
+    "hochan-desktop-pet/codex_bridge.py": {
+      "bytes": 5044,
+      "sha256": "f9dcfd6c2fea97fd24c4493a3398b16ec8c6b49e0c84737a96a5400e759b6554"
+    },
+    "hochan-desktop-pet/codex_observer.py": {
+      "bytes": 14440,
+      "sha256": "0f386d39704c917db0a2afd720abd8c5d1d3af14602257e253696bd7df54ea6d"
+    },
+    "hochan-desktop-pet/context_menu.py": {
+      "bytes": 10359,
+      "sha256": "98e78ca3b90c6222d3052b0bde44290c825f32842d6cdead67e5bfce62f08b09"
+    },
+    "hochan-desktop-pet/drag_anchor.py": {
+      "bytes": 2066,
+      "sha256": "3e71d293bb776037cd93a96b6b12bc3b3022496b716ce466d8e32dbfe4514405"
+    },
+    "hochan-desktop-pet/drag_renderer.py": {
+      "bytes": 2701,
+      "sha256": "3221ccf118b4ce86f6aeb7159b888dac539d6c0b0c589d61afeaee0d3faf98e0"
+    },
+    "hochan-desktop-pet/family_store.py": {
+      "bytes": 7524,
+      "sha256": "d2bc00ca64472a2112596c059fe9b179657aa6f25a7b04a687a14a008d73f742"
+    },
+    "hochan-desktop-pet/frame_renderer.py": {
+      "bytes": 5277,
+      "sha256": "a8ef0bfccab74fc8a19d3b18cee2c34cc421dedb88303d3f8d69a40322d9f357"
+    },
+    "hochan-desktop-pet/hochan_pet.py": {
+      "bytes": 27039,
+      "sha256": "1a84ae711e96409a4ee8969de9c5a30e2bd4e210eaef9cc29bd660255d9bb810"
+    },
+    "hochan-desktop-pet/hooks/codex-hochan-hook.ps1": {
+      "bytes": 28875,
+      "sha256": "c40c62307f3734af233ed7d5099b93174e4b3b067d6491b84fe07af2b929ac5b"
+    },
+    "hochan-desktop-pet/install-codex-autostart.ps1": {
+      "bytes": 3289,
+      "sha256": "0e3676281113b7cd4db5f0a5a1fcd1f5b5c963d9422dff232b2f47af7d101ebc"
+    },
+    "hochan-desktop-pet/install-hooks.ps1": {
+      "bytes": 7279,
+      "sha256": "39387310833ff3465b3b369a0d02555028992fd9773d22595d9616e6178e7491"
+    },
+    "hochan-desktop-pet/layered_buffer.py": {
+      "bytes": 4257,
+      "sha256": "927bf23765764b432b20db16d4e6dfbf0466f85ac4fc2f8228e22659c2450154"
+    },
+    "hochan-desktop-pet/leisure.py": {
+      "bytes": 2879,
+      "sha256": "3bf9040b4debcdb0ad1abb87a9f62f3da150f78197d4a1692dd27105f30a35b5"
+    },
+    "hochan-desktop-pet/LICENSE": {
+      "bytes": 1110,
+      "sha256": "bd68a6c53c24d03befc96b24fa501c4bda06736c2cc224f27df89c06d0ee5148"
+    },
+    "hochan-desktop-pet/observer_worker.py": {
+      "bytes": 4664,
+      "sha256": "098046ffb0852e642ff1e05c239013c7406546ceb854062b07bd6eaba33d6823"
+    },
+    "hochan-desktop-pet/pcr_pet.py": {
+      "bytes": 38775,
+      "sha256": "41749130d093e7b54432fc35c7d5a4701d267126fa11935c75220d7111f72be4"
+    },
+    "hochan-desktop-pet/preview/README.md": {
+      "bytes": 1076,
+      "sha256": "d8cbc931aea6730ba2f3af3d9a01cf1f9f7b17cccb22a7a71a68cea896a25afc"
+    },
+    "hochan-desktop-pet/preview-hochan.cmd": {
+      "bytes": 132,
+      "sha256": "e2eaaf7e69d712a1bf88dc57162ab7c6fe517161a985344149a650ef05fe874a"
+    },
+    "hochan-desktop-pet/README.md": {
+      "bytes": 2836,
+      "sha256": "05b1a1645ec9e62c3ceeffe2aba75ac0a6eaa132d14e1ed784dce22d5c678e27"
+    },
+    "hochan-desktop-pet/rendering.py": {
+      "bytes": 2178,
+      "sha256": "fea38ecb52341fe2cfd980529552fc5fdc2ec21ad6b1c17132e099f5a03aa37f"
+    },
+    "hochan-desktop-pet/requirements.txt": {
+      "bytes": 52,
+      "sha256": "6105be7f619d514ee8d48784e4408f5c9efb8e941f45e41ac135ba4ae81b111c"
+    },
+    "hochan-desktop-pet/review-hooks.cmd": {
+      "bytes": 328,
+      "sha256": "655a78f5bec373ec547ff9898574ffc539da68edc1559766631a4bc3b19b2ca5"
+    },
+    "hochan-desktop-pet/setup.ps1": {
+      "bytes": 448,
+      "sha256": "e159481edcf15ac8ae3b514592c20239d846aa2387e3831ac77b8a2c62b39715"
+    },
+    "hochan-desktop-pet/skin.json": {
+      "bytes": 2350,
+      "sha256": "b5bd758e0daaaf06d20f05bf6bf12d9fa4e579618d6697586b2ffd4c0090b885"
+    },
+    "hochan-desktop-pet/start-hochan.cmd": {
+      "bytes": 215,
+      "sha256": "c0cea7e934440c16aedbbfba35b1bd3100cc14fcaa4a493b4265e7b242b3d529"
+    },
+    "hochan-desktop-pet/tools/add_character.py": {
+      "bytes": 3320,
+      "sha256": "500e902421d0cdefc8d88b9b0c6f67e0292fc1b6b9b7c896212b7bc62b0a149f"
+    },
+    "hochan-desktop-pet/tools/build_skin.py": {
+      "bytes": 14774,
+      "sha256": "351ffb0b3af1af814e99a8a01250a672e99d660dc1cf4369eec2360997c6c2e6"
+    },
+    "hochan-desktop-pet/tools/export_hand_anchors.ps1": {
+      "bytes": 2301,
+      "sha256": "dd414ee710625bf43b5f40d03ebeb61cab441acdccf7292dd360decd01cb0772"
+    },
+    "hochan-desktop-pet/tools/optimize_assets.py": {
+      "bytes": 7289,
+      "sha256": "0f80a9951f5592e615f19fe5794c94ff8b7d9ebd1b337b904ce974bc3883641c"
+    },
+    "hochan-desktop-pet/tools/profile_drag_motion.py": {
+      "bytes": 4367,
+      "sha256": "63ad8cc2001b7da6267a5ee0609818c670d44ba48f7acf0d507f617d08cbb4a3"
+    },
+    "hochan-desktop-pet/tools/profile_runtime.py": {
+      "bytes": 5162,
+      "sha256": "3ae158c5d570b58d50b0901e2a71c291462acf2f8e181ebf4c18606772f75cf9"
+    },
+    "hochan-desktop-pet/tools/spine_sources.py": {
+      "bytes": 1404,
+      "sha256": "d062dbf18650e7eddacf41736e7bc288083259ee93fa63f265d50cc4298a6bac"
+    },
+    "hochan-desktop-pet/tools/verify_asset_storage.py": {
+      "bytes": 7410,
+      "sha256": "40afca8cfa9fccc30df223b6f1fd7e68567daafa29fcef5f8a6621a9d5f9c3cc"
+    },
+    "hochan-desktop-pet/tools/verify_autostart.py": {
+      "bytes": 3302,
+      "sha256": "8d1848517786339f281da11aaac99f87519645085da48111363f56b416894345"
+    },
+    "hochan-desktop-pet/tools/verify_autostart_lifetime.py": {
+      "bytes": 8023,
+      "sha256": "5fb9d6197db4f09cdcd95d91984996c03409560833112dd854decdd558a28a0c"
+    },
+    "hochan-desktop-pet/tools/verify_characters.py": {
+      "bytes": 14791,
+      "sha256": "8904c7ffa8713cdfc93edfde189bbbc744ca6182e0b89837d4e45dcc5b162cdb"
+    },
+    "hochan-desktop-pet/tools/verify_cleanup.py": {
+      "bytes": 5437,
+      "sha256": "221a5dce84edb62c63f2a6f04566e054825b7ea4d5a753c66e188ea105ce6833"
+    },
+    "hochan-desktop-pet/tools/verify_compaction.py": {
+      "bytes": 9802,
+      "sha256": "16df06217e6323f79c094a79e539483bfe30e650a16c7c866b42ccb888dec6a2"
+    },
+    "hochan-desktop-pet/tools/verify_drag_anchor.py": {
+      "bytes": 13749,
+      "sha256": "13e742dbf17f4617cb8fd7f5d0006b1195911278a7b971056b6bec7c96237516"
+    },
+    "hochan-desktop-pet/tools/verify_drag_renderer.py": {
+      "bytes": 2233,
+      "sha256": "1429d79041fb88c3797e8d72f5e7688df39947865c3044d91351ebc6d679b558"
+    },
+    "hochan-desktop-pet/tools/verify_drag_start.py": {
+      "bytes": 5063,
+      "sha256": "df6d284fc51df342ba760d447277357ae96f037d10e5300b4b2d4fa9535faf24"
+    },
+    "hochan-desktop-pet/tools/verify_family_resume.py": {
+      "bytes": 3185,
+      "sha256": "39bd4fbf0f8f973a9f8cd34d024fc49521f3a8fee2ee77bce3809431c27b7815"
+    },
+    "hochan-desktop-pet/tools/verify_hooks.py": {
+      "bytes": 9601,
+      "sha256": "3a69c09095102741d9685d3447403c2f045c1e8c6868988e26e8f3adb1fc1967"
+    },
+    "hochan-desktop-pet/tools/verify_menu.py": {
+      "bytes": 10821,
+      "sha256": "4f2bf04dea26b3105cafc4aaaf2fbf62d3d6ed0f5660e7f1d6e4013ec6b64a95"
+    },
+    "hochan-desktop-pet/tools/verify_pipeline.py": {
+      "bytes": 8723,
+      "sha256": "4747ea9b0200d71ba7653fc411c509d2c94d5cd0da1471b2df695386d3c755e9"
+    },
+    "hochan-desktop-pet/tools/verify_rendering.py": {
+      "bytes": 4851,
+      "sha256": "59695727f1c06bd80dab49a9b4179edead99860cb7dc0c332bdcd84556045c45"
+    },
+    "hochan-desktop-pet/tools/verify_runtime.py": {
+      "bytes": 7987,
+      "sha256": "e9a35d1dcba82cbe4e661de79624b754c848bf18f0fc7fed7d1ec1280bb57ce9"
+    },
+    "hochan-desktop-pet/tools/verify_size.py": {
+      "bytes": 5762,
+      "sha256": "5a82a2c55809244b0ea1b5e41b0c8a2f8b9945d00b5b10c265eacccdd9ffeef1"
+    },
+    "hochan-desktop-pet/tools/verify_skin.py": {
+      "bytes": 10019,
+      "sha256": "4b017918ebf155aa4ad479944e3249c2b09167a4fc69e14a62dc056cfec4f451"
+    },
+    "hochan-desktop-pet/tools/verify_stationary_drag.py": {
+      "bytes": 4720,
+      "sha256": "86bafbbe5daca858108f744c05423164702d4fe44ba727761e32e43d96cc6794"
+    },
+    "hochan-desktop-pet/tools/verify_topmost.py": {
+      "bytes": 11896,
+      "sha256": "4d2a47a6c819933a8c28ec7f176e879df8f8af5c1a157d6b870aff251aa0cfca"
+    },
+    "hochan-desktop-pet/tools/verify_turn_start.py": {
+      "bytes": 4062,
+      "sha256": "1fae0637c1df84a4e612e27a4a9e4fe42f17a8e74d3f2305ca6d70f846715a6b"
+    },
+    "hochan-desktop-pet/UPSTREAM.md": {
+      "bytes": 2525,
+      "sha256": "aaa5fd35bcfffdd23bdd01280e4767b547e796505e29a3584c9d1a42ea931ff7"
+    },
+    "hochan-desktop-pet/win32_api.py": {
+      "bytes": 7395,
+      "sha256": "32139b388bebdadf70ea5bb2ee7782ce2d98163a2c7e46d686e9c1ebc3cd5df5"
+    },
+    "hochan-desktop-pet/windows_pet.py": {
+      "bytes": 33562,
+      "sha256": "0f70fbe8d44f354a3decae5fe505a0ed43274fe467aa1342d5580d2f464ff8e6"
+    },
+    "README.md": {
+      "bytes": 2481,
+      "sha256": "86fd3dc31aad0110afd8dbe3dfd04b66e7f4ab74e01f407b49cdb9782ae628d1"
+    }
+  }
+}

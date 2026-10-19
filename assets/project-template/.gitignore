@@ -1,0 +1,7 @@
+.tools/
+source/
+**/.venv/
+**/__pycache__/
+hochan-desktop-pet/build/
+hochan-desktop-pet/state/
+startup-error.log

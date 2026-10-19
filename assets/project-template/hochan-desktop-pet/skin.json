@@ -1,0 +1,106 @@
+{
+  "name": "ホウオウ",
+  "animation_prefix": "hochan",
+  "phase": 2,
+  "fps": 60,
+  "window_size": 640,
+  "body_anchor": [
+    410,
+    570
+  ],
+  "drag_anchor": {
+    "slot": "handB",
+    "palm_offset": [
+      24.0,
+      7.5
+    ]
+  },
+  "fixed_view": {
+    "center_x": -225,
+    "center_y": 625,
+    "scale": 0.4,
+    "supersampling": 3
+  },
+  "animations": {
+    "idle": {
+      "animation": "07_idle",
+      "label": "待机",
+      "duration_seconds": 1.1666666
+    },
+    "left": {
+      "animation": "000000_balloon_flying_loop",
+      "label": "拖动悬浮",
+      "duration_seconds": 1.3333334
+    },
+    "reading": {
+      "animation": "07_walk",
+      "label": "思考回复",
+      "duration_seconds": 0.8
+    },
+    "working": {
+      "animation": "07_run",
+      "label": "执行工具",
+      "duration_seconds": 0.6
+    },
+    "jump": {
+      "animation": "134701_joyResult",
+      "label": "完成庆祝",
+      "duration_seconds": 2.6666667,
+      "loop": false
+    },
+    "question": {
+      "animation": "000000_dear_idol",
+      "label": "等待确认",
+      "duration_seconds": 1.3333334
+    },
+    "packing_01": {
+      "animation": "07_standBy",
+      "label": "压缩 1",
+      "duration_seconds": 1.3
+    },
+    "packing_02": {
+      "animation": "07_multi_standBy",
+      "label": "压缩 2",
+      "duration_seconds": 1.8
+    },
+    "packing_03": {
+      "animation": "134701_skill1",
+      "label": "压缩 3",
+      "duration_seconds": 2.6666667,
+      "loop": false
+    },
+    "packing_04": {
+      "animation": "134701_skill2",
+      "label": "压缩 4",
+      "duration_seconds": 2.6666667,
+      "loop": false
+    },
+    "bow": {
+      "animation": "000000_stamina_karin_ojigi",
+      "label": "空闲随机 · 鞠躬",
+      "duration_seconds": 2.3333333,
+      "loop": false
+    },
+    "sleep_body": {
+      "animation": "000000_noWeapon_idle",
+      "label": "休息",
+      "duration_seconds": 1.3333334
+    },
+    "wake": {
+      "animation": "000000_friend_hightouch",
+      "label": "挥手唤醒",
+      "duration_seconds": 1.2666667,
+      "loop": false
+    },
+    "edge_reveal": {
+      "animation": "000000_dear_smile",
+      "label": "边缘展开",
+      "duration_seconds": 1.6,
+      "loop": false
+    }
+  },
+  "aliases": {
+    "click_feedback": "wake",
+    "sleep_entry": "sleep_body"
+  }
+}

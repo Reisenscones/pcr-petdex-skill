@@ -1,0 +1,4 @@
+interface:
+  display_name: "PCR Petdex 桌宠制作"
+  short_description: "从 Spine 素材制作支持掌心拖动、角色切换与 Codex 联动的 Windows 桌宠"
+  default_prompt: "使用 $pcr-petdex-skill，根据我的 Spine 骨骼、atlas 和贴图，从零制作支持掌心拖动、边缘收纳和可选 Codex 联动的 Windows 桌宠。"
